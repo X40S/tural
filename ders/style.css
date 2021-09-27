@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#generate__btn {
+    margin-top: 15px;
+}
+
+.colorBox {
+    margin: 10px auto;
+    width: 200px;
+    height: 200px;
+}
+
+.saveBtn {
+    width: 95px;
+}
+
+.deleteBtn {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 5px;
+}
+
+.saveList {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.savedItem {
+    position: relative;
+    min-width: 100px;
+    height: 100px;
+}
+
+.savedItem+.savedItem {
+    margin-left: 10px;
+}
+
+.deleteBtn:after {
+    display: inline-block;
+    content: "\00d7";
+}
+
+.deleteBtn:hover {
+    top: -1px;
+    right: 4px;
+    font-size: 25px;
+    color:red;  
+}
+
+.alertBox{
+    background-color: red;
+    min-width: 100px;
+    height: 100px;
+}
